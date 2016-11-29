@@ -14,6 +14,7 @@
     <div id="body-container">
       <div id="header-bar">
         <h1 id="page-title">Glassdoor Job Search Statistical Analysis</h1>
+        <h3 id="page-description">INFO 370: Introduction to Data Science</h3>
         <nav>
           <a href="#team-info"><div id="vis-1-button" class="nav-button">1</div></a>
           <a href="#project-info"><div id="vis-2-button" class="nav-button">2</div></a>
@@ -27,21 +28,44 @@
 						<div id="member-1" class="member">
 							<span class="subsection-header">Jackson Brown</span>
 							<img src="https://i.imgsafe.org/b42b6c5a08.jpg" alt="jackson maxfield brown" class="circle-img"/>
-							<p class="content-actual">Short intro for jackson goes here</p>
+							<p class="content-actual">
+								<ul>
+									<li>Senior student @iSchool</li>
+									<li>fact2</li>
+									<li>fact3</li>
+								</ul>
+							</p>
 						</div>
 						<div id= "member-2" class="member">
 							<span class="subsection-header">Domenica Mata</span>
 							<img src="https://i.imgsafe.org/b42b6c5a08.jpg" alt="jackson maxfield brown" class="circle-img"/>
-							<p class="content-actual">Short intro for Domenica goes here</p>
+							<p class="content-actual">
+								<ul>
+									<li>Senior student @iSchool</li>
+									<li>Interested in Anthropology, Economics, Traveling and Tech for Social Good, especially in developing nations.</li>
+									<li>fact3</li>
+								</ul>
+							</p>
 						</div>
 						<div id="member-3" class="member">
 							<span class="subsection-header">Lincoln Shan</span>
 							<img src="https://i.imgsafe.org/b42b6c5a08.jpg" alt="jackson maxfield brown" class="circle-img"/>
-							<p class="content-actual">Short intro for Lincoln goes here</p>
+							<p class="content-actual">
+								<ul>
+									<li>Senior student @Political Science</li>
+									<li>Interested in Marketing Analytics</li>
+									<li>Plays Basketball</li>
+								</ul>
+							</p>
 						</div>
 						<div id="contact-info" class="member">
 							<span class="subsection-header">Contact Us</span>
-							<p class="content-text">Contact info goes here</p>
+							<p class="content-text">
+							<ul>
+								<li>Jackson: jmaxfieldbrown@gmail.com</li>
+								<li>Domenica: dcm93@uw.edu</li>
+								<li>Lincoln: lincolnshan@gmail.com</li>
+							</ul>></p>
 						</div>
 					</div>
 				</div>
@@ -69,16 +93,23 @@
 							</li>
 							<br><li>We gathered data from the May 2015 Metropolitan and Nonmetropolitan Area Occupational Employment and Wage Estimates from the U.S Bureau of Labor Statistics for the national and city/county levels. The data on all levels includes unique BLS Identifier for each Job Title, National or Local Average Annual Mean Salary and Job Title.</li>
 							<br><li>We compiled a list of the best 25 tech-related jobs in the U.S from our Glassdoor data by assigning each job title a rank based on the salaries for said job (starting job) and the the nex 2 jobs an employee in that position is likely to attain, as estimated by Glassdoor's Job Progression Statistics Tool. The ranks for all jobs are obtained with the following formula:
-								<p><br>&nbsp &nbsp <i>JobScore = Starting Position(National Average Mean Salary) * 0.45 + 1st Next Job for Starting Position (National Average Mean Salary) * 0.15 + 2nd Next Job fpr Starting Position (National Average Mean Salary) * 0.45</p>
+								<p><br>&nbsp &nbsp <i>JobScore = Starting Position(National Average Mean Salary) * 0.45 + 1st Next Job for Starting Position (National Average Mean Salary) * 0.15 + 2nd Next Job fpr Starting Position (National Average Mean Salary) * 0.45</i></p>
 								<p id="disclaimer"><br>&nbsp &nbsp &nbsp *Weights were obtained through a survey distributed to college students via social media where respondents were asked to rank the stages of their prospective career by distributing 100 points among starting job, 1st next job and 2nd next job. Results demonstrated that while the middle stage of a career attains certain importance, the immediate and long-term stages of a career are the most important for our respondents.</p>
 							</li>
 							<br><li>Locations are filtered by
 							</li>
-							<br><li>Next step goes here</li>
-							<br><li>Next step goes here</li>
-							<br><li>Next step goes here</li>
-							<br><li>Next step goes here</li>
-							<br><li>Next step goes here</li>
+							<br><li>Then, to sort the jobs by location, we determine what cities offer the jobs with the best progression from our previous rating.</li>
+							<br><li>Then for each city, a list will show each job with its ranking in our list, the median starting salary for that job in that city (normalized with the Consumer Price Index vs the CPI for the nation) and the average salary progression for the job.  </li>
+							<br><li>When you click on the job title, a window will show a of companies offering that job and each company will have a rating that is based on getting the average rating based on:
+							<ul>
+							<br><li>Culture</li>
+							<li>Leadership</li>
+							<li>Compensation</li>
+							<li>Opportunities</li>
+							<li>Work-life balance</li>
+							</li>
+							
+							</ul>
 						</ol>
 					</div>
 					<div id="results" class="ctnt-txt-ctnr">
@@ -100,4 +131,3 @@
     </div>
 	</body>
 </html>
-
